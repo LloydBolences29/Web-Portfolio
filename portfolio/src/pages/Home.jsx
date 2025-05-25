@@ -158,7 +158,7 @@ const Home = () => {
                 <div className="patientfirst-thumbnail">
                   <img
                     className="patientfirst-img"
-                    src="../../public/patientfirst.jpg"
+                    src="/patientfirst.jpg"
                     alt="PatientFirst Thumbnail"
                   />
                 </div>
