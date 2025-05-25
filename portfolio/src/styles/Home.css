@@ -11,6 +11,7 @@
   align-self: flex-start; 
   height: fit-content; 
 } */
+
 .sticky-section-header{
     position: sticky;
   top: 0; /* Adjust for fixed nav height */

@@ -41,7 +41,7 @@ const Home = () => {
             {/* section for about me */}
             <section id="about" className="mb-4">
               <div>
-                <h2 className="fw-semibold sticky-section-header">About Me</h2>
+                <h2 className="fw-semibold sticky-section-header">About</h2>
               </div>
 
               <div>
