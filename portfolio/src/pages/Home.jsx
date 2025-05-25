@@ -7,15 +7,15 @@ const Home = () => {
   const sectionIds = ["about", "experience", "projects"];
   const activeSection = ScrollSpy(sectionIds);
   return (
-    <div>
+    <div className="home-container">
       <Container>
         <Row className="home align-items-center" style={{ minHeight: "100vh" }}>
           <Col
             xs={12}
             md={6}
-            className="home_left mb-4 mb-md-0 d-flex flex-column justify-content-center align-items-center align-items-md-start text-center text-md-start"
+            className="home-left mb-4 mb-md-0 d-flex flex-column justify-content-center align-items-center align-items-md-start text-center text-md-start"
           >
-            <div className="hero_info">
+            <div className="hero-info">
               <h1 className="fw-bold">Lloyd Matthew D. Bolences</h1>
               <h2 className="text-primary">Information Technology</h2>
               <p className="lead">
@@ -24,7 +24,7 @@ const Home = () => {
               </p>
             </div>
 
-            <nav className="mobile-nav">
+            {/* <nav className="mobile-nav">
               {sectionIds.map((id) => (
                 <a
                   key={id}
@@ -35,14 +35,14 @@ const Home = () => {
                   {id.charAt(0).toUpperCase() + id.slice(1)}
                 </a>
               ))}
-            </nav>
+            </nav> */}
           </Col>
 
           <Col xs={12} md={6} className="home_right">
             {/* section for about me */}
-            <section id="about" className="mb-4">
+            <section id="about" className="mb-4 hero-section" >
               <div className="sticky-section-header">
-                <h2 className="fw-semibold">About</h2>
+                <h2 className="fw-semibold section-name">About</h2>
               </div>
 
               <div>
@@ -61,23 +61,23 @@ const Home = () => {
             </section>
             <br />
 
-            <section id="experience">
+            <section id="experience" className="mb-4 hero-section">
               <div className="sticky-section-header">
-                <h2 className="fw-semibold">Experience</h2>
+                <h2 className="fw-semibold section-name">Experience</h2>
               </div>
 
               <div>
-                <Row>
+                <Row className="experience">
                   <Col
                     xs={12}
                     md={4}
-                    className="mb-2 mb-md-0 text-center text-md-start"
+                    className="mb-md-0 text-center text-md-start"
                   >
-                    <p>2024 - Present</p>
+                    <p className="experience-date">2024 - Present</p>
                   </Col>
                   <Col xs={12} md={8}>
                     <div>
-                      <h3 className="h5">
+                      <h3>
                         Digital Solution Intern (Internship) | Southern Asia
                         Pacific Division
                       </h3>
@@ -94,17 +94,17 @@ const Home = () => {
                 </Row>
               </div>
               <div>
-                <Row>
+                <Row className="experience">
                   <Col
                     xs={12}
                     md={4}
-                    className="mb-2 mb-md-0 text-center text-md-start"
+                    className="mb-md-0 text-center text-md-start"
                   >
-                    <p>JANUARY- FEBRUARY 2024</p>
+                    <p className="experience-date">JANUARY- FEBRUARY 2024</p>
                   </Col>
                   <Col xs={12} md={8}>
                     <div>
-                      <h3 className="h5">
+                      <h3>
                         ESL TEACHER | Haiyan Learning Academy
                       </h3>
 
@@ -121,17 +121,17 @@ const Home = () => {
                 </Row>
               </div>
               <div>
-                <Row>
+                <Row className="experience">
                   <Col
                     xs={12}
                     md={4}
-                    className="mb-2 mb-md-0 text-center text-md-start"
+                    className="mb-md-0 text-center text-md-start"
                   >
-                    <p>2023 - 2024</p>
+                    <p className="experience-date">2023 - 2024</p>
                   </Col>
                   <Col xs={12} md={8}>
                     <div>
-                      <h3 className="h5">
+                      <h3>
                         WORDPRESS WEB DESIGNER | Manns Marketing (WFH Setup)
                       </h3>
 
@@ -150,9 +150,9 @@ const Home = () => {
             </section>
             <br />
 
-            <section id="projects">
+            <section id="projects" className="mb-4 hero-section">
               <div className="sticky-section-header">
-                <h2 className="fw-semibold">Project</h2>
+                <h2 className="fw-semibold section-name">Project</h2>
               </div>
               <div className="patientfirst-project">
                 {/* thumbnail */}
@@ -193,6 +193,7 @@ const Home = () => {
                     alt="PatientFirst Thumbnail"
                   />
                 </div>
+                <br />
 
                 <div className="patientfirst-info">
                   <h2 className="fw-semibold">
@@ -217,6 +218,21 @@ const Home = () => {
           </Col>
         </Row>
       </Container>
+
+<br />
+
+
+      <footer>
+        {/* <Container> */}
+          <Row className="footer">
+            <Col xs={12} className="text-center">
+              <p className="mb-0">
+                &copy; {new Date().getFullYear()} Lloyd Matthew D. Bolences
+              </p>
+            </Col>
+          </Row>
+        {/* </Container> */}
+      </footer>
     </div>
   );
 };

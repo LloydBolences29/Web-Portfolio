@@ -5,21 +5,38 @@
     gap: 2rem;
     
 } */
-/* .home__left{
-  position: sticky;
-  top: 50px; 
-  align-self: flex-start; 
-  height: fit-content; 
-} */
+.home-left{
+  margin-bottom: 5rem;
+}
 
+.hero-info{
+  line-height: 1.5;
+}
+
+.lead{
+  padding: 1rem 0 0 0;
+}
+.home-container{
+  padding: 3rem 2rem;
+}
 .home_right {
   position: relative;
 }
 
+
 .sticky-section-header {
   position: sticky;
-  top: 10px; /* Adjust for fixed nav height */
-  background: #fff; 
+  top: 0; /* Adjust for fixed nav height */
+  background: rgb(2, 2, 40) 100%;
+}
+.section-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+.hero-section{
+  margin: 2rem 0;
 }
 
 .mobile-nav {
@@ -65,4 +82,20 @@ a::after {
 
 a:hover::after {
   width: 100%;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 3rem 0;
+}
+
+.experience .experience-date {
+  font-size: 0.9rem;
+  color: #ffffff88;
+  align-content: start;
+  margin: 1rem 0 0 0;
+}
+.patientfirst-project {
+  margin: 1rem 0;
 }
