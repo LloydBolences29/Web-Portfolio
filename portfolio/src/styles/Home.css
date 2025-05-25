@@ -27,7 +27,7 @@
 .sticky-section-header {
   position: sticky;
   top: 0; /* Adjust for fixed nav height */
-  background: rgb(2, 2, 40) 100%;
+  background: rgb(1, 1, 22) 100%;
 }
 .section-name {
   font-size: 1.5rem;
@@ -98,4 +98,57 @@ a:hover::after {
 }
 .patientfirst-project {
   margin: 1rem 0;
+}
+
+
+/* Tablet view */
+@media (min-width: 768px) {
+  .home {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home-left {
+    margin-bottom: 2rem;
+  }
+  img {
+    max-width: 100%;
+    margin: 1rem;
+  }
+  .mobile-nav a {
+    display: block;
+    text-align: center;
+  }
+  .sticky-section-header{
+    position: relative;
+  }
+
+  .hero-info h1{
+    font-size: 3.5rem;
+  }
+  .home-container{
+  padding: 5rem 4rem;
+}
+.section-name{
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.patientfirst-thumbnail {
+  display: flex;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+.patientfirst-project{
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
 }

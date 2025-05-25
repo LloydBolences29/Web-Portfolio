@@ -193,7 +193,7 @@ const Home = () => {
                     alt="PatientFirst Thumbnail"
                   />
                 </div>
-                <br />
+            
 
                 <div className="patientfirst-info">
                   <h2 className="fw-semibold">
