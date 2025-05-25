@@ -13,16 +13,16 @@ const Home = () => {
           <Col
             xs={12}
             md={6}
-            className="home-left mb-4 mb-md-0 d-flex flex-column justify-content-center align-items-center align-items-md-start text-center text-md-start"
+            className="home-left home-child mb-4 mb-md-0 d-flex flex-column justify-content-center align-items-center align-items-md-start text-center text-md-start"
           >
-            <div className="hero-info">
-              <h1 className="fw-bold">Lloyd Matthew D. Bolences</h1>
-              <h2 className="text-primary">Information Technology</h2>
-              <p className="lead">
-                Passionate for building solutions to tech-related challenges
-                mainly using MERN Stack.
-              </p>
-            </div>
+              <div className="hero-info">
+                <h1 className="fw-bold">Lloyd Matthew D. Bolences</h1>
+                <h2 className="text-primary">Information Technology</h2>
+                <p className="lead">
+                  Passionate for building solutions to tech-related challenges
+                  mainly using MERN Stack.
+                </p>
+              </div>
 
             {/* <nav className="mobile-nav">
               {sectionIds.map((id) => (
@@ -38,9 +38,9 @@ const Home = () => {
             </nav> */}
           </Col>
 
-          <Col xs={12} md={6} className="home_right">
+          <Col xs={12} md={6} className="home-right home-child">
             {/* section for about me */}
-            <section id="about" className="mb-4 hero-section" >
+            <section id="about" className="mb-4 hero-section">
               <div className="sticky-section-header">
                 <h2 className="fw-semibold section-name">About</h2>
               </div>
@@ -104,9 +104,7 @@ const Home = () => {
                   </Col>
                   <Col xs={12} md={8}>
                     <div>
-                      <h3>
-                        ESL TEACHER | Haiyan Learning Academy
-                      </h3>
+                      <h3>ESL TEACHER | Haiyan Learning Academy</h3>
 
                       <p>
                         Handled multiple Korean Student ages from 8 to 15 years
@@ -193,7 +191,6 @@ const Home = () => {
                     alt="PatientFirst Thumbnail"
                   />
                 </div>
-            
 
                 <div className="patientfirst-info">
                   <h2 className="fw-semibold">
@@ -219,18 +216,17 @@ const Home = () => {
         </Row>
       </Container>
 
-<br />
-
+      <br />
 
       <footer>
         {/* <Container> */}
-          <Row className="footer">
-            <Col xs={12} className="text-center">
-              <p className="mb-0">
-                &copy; {new Date().getFullYear()} Lloyd Matthew D. Bolences
-              </p>
-            </Col>
-          </Row>
+        <Row className="footer">
+          <Col xs={12} className="text-center">
+            <p className="mb-0">
+              &copy; {new Date().getFullYear()} Lloyd Matthew D. Bolences
+            </p>
+          </Col>
+        </Row>
         {/* </Container> */}
       </footer>
     </div>
