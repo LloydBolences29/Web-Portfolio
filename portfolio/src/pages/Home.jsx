@@ -13,7 +13,7 @@ const Home = () => {
           <Col
             xs={12}
             md={6}
-            className="home__left mb-4 mb-md-0 d-flex flex-column justify-content-center align-items-center align-items-md-start text-center text-md-start"
+            className="home_left mb-4 mb-md-0 d-flex flex-column justify-content-center align-items-center align-items-md-start text-center text-md-start"
           >
             <div className="hero_info">
               <h1 className="fw-bold">Lloyd Matthew D. Bolences</h1>
@@ -31,17 +31,18 @@ const Home = () => {
                   href={`#${id}`}
                   className={activeSection === id ? "active" : ""}
                 >
-                 {" "}{id.charAt(0).toUpperCase() + id.slice(1)} 
+                  {" "}
+                  {id.charAt(0).toUpperCase() + id.slice(1)}
                 </a>
               ))}
             </nav>
           </Col>
 
-          <Col xs={12} md={6} className="home__right">
+          <Col xs={12} md={6} className="home_right">
             {/* section for about me */}
             <section id="about" className="mb-4">
-              <div>
-                <h2 className="fw-semibold sticky-section-header">About</h2>
+              <div className="sticky-section-header">
+                <h2 className="fw-semibold">About</h2>
               </div>
 
               <div>
@@ -61,8 +62,8 @@ const Home = () => {
             <br />
 
             <section id="experience">
-              <div>
-                <h2 className="fw-semibold sticky-section-header">Experience</h2>
+              <div className="sticky-section-header">
+                <h2 className="fw-semibold">Experience</h2>
               </div>
 
               <div>
@@ -150,9 +151,39 @@ const Home = () => {
             <br />
 
             <section id="projects">
-              <div>
-                <h2 className="fw-semibold sticky-section-header">Project</h2>
+              <div className="sticky-section-header">
+                <h2 className="fw-semibold">Project</h2>
               </div>
+              <div className="patientfirst-project">
+                {/* thumbnail */}
+                <div className="patientfirst-thumbnail">
+                  <img
+                    className="patientfirst-img"
+                    src="/patientfirst.jpg"
+                    alt="PatientFirst Thumbnail"
+                  />
+                </div>
+
+                <div className="patientfirst-info">
+                  <h2 className="fw-semibold">
+                    <a
+                      className="patientfirst-title"
+                      href="https://aup-patient-first-frontend.vercel.app/"
+                    >
+                      PatientFirst
+                    </a>
+                  </h2>
+                  <p>
+                    A full-stack web application that allows patients to view
+                    their profile, get a preliminary diagnosis using a symptom
+                    checker powered by an AI from Infermedica engine API. This
+                    web application is mainly designed for AUP clinic staff and
+                    medical practitioner to modernize their workflow of clinic's
+                    procedure.
+                  </p>
+                </div>
+              </div>
+              <br />
               <div className="patientfirst-project">
                 {/* thumbnail */}
                 <div className="patientfirst-thumbnail">
