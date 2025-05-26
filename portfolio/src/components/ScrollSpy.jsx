@@ -17,8 +17,8 @@ const ScrollSpy = (sectionIds) => {
         }
       },
       {
-        rootMargin: "0% 0px 0% 0px",
-        threshold: [1],
+        rootMargin: "0% 0px -85% 0px",
+        threshold: [0],
       }
     );
 

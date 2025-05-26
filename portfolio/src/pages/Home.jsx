@@ -4,7 +4,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import ScrollSpy from "../components/ScrollSpy";
 
 const Home = () => {
-  const sectionIds = ["about", "experience", "projects"];
+  const sectionIds = ["about", "experiences", "projects"];
   const activeSection = ScrollSpy(sectionIds);
   return (
     <div className="home-container">
@@ -15,27 +15,29 @@ const Home = () => {
             md={6}
             className="home-left home-child mb-4 mb-md-0 d-flex flex-column justify-content-center align-items-center align-items-md-start text-center text-md-start"
           >
-              <div className="hero-info">
-                <h1 className="fw-bold">Lloyd Matthew D. Bolences</h1>
-                <h2 className="text-primary">Information Technology</h2>
-                <p className="lead">
-                  Passionate for building solutions to tech-related challenges
-                  mainly using MERN Stack.
-                </p>
-              </div>
+            <div className="hero-info">
+              <h1 className="fw-bold">Lloyd Matthew D. Bolences</h1>
+              <h2 className="text-primary">Information Technology</h2>
+              <p className="lead">
+                Passionate for building solutions to tech-related challenges
+                mainly using MERN Stack.
+              </p>
 
-            {/* <nav className="mobile-nav">
-              {sectionIds.map((id) => (
-                <a
-                  key={id}
-                  href={`#${id}`}
-                  className={activeSection === id ? "active" : ""}
-                >
-                  {" "}
-                  {id.charAt(0).toUpperCase() + id.slice(1)}
-                </a>
-              ))}
-            </nav> */}
+              <div className="mobile-nav-container">
+                <nav className="mobile-nav">
+                  {sectionIds.map((id) => (
+                    <a
+                      key={id}
+                      href={`#${id}`}
+                      className={activeSection === id ? "active" : ""}
+                    >
+                      {" "}
+                      {id.charAt(0).toUpperCase() + id.slice(1)}
+                    </a>
+                  ))}
+                </nav>
+              </div>
+            </div>
           </Col>
 
           <Col xs={12} md={6} className="home-right home-child">
@@ -61,7 +63,7 @@ const Home = () => {
             </section>
             <br />
 
-            <section id="experience" className="mb-4 hero-section">
+            <section id="experiences" className="mb-4 hero-section">
               <div className="sticky-section-header">
                 <h2 className="fw-semibold section-name">Experience</h2>
               </div>

@@ -31,7 +31,7 @@
   margin: 2rem 0;
 }
 
-.mobile-nav {
+/* .mobile-nav {
   position: fixed;
   top: 0;
   left: 0;
@@ -43,6 +43,7 @@
   border-bottom: 1px solid #ddd;
   z-index: 1100;
 }
+  *
 
 .mobile-nav a {
   display: none;
@@ -50,30 +51,12 @@
   color: black;
   padding: 0.5rem;
 }
+  */
 
-.mobile-nav a.active {
-  font-weight: bold;
-  color: #007bff;
-  border-bottom: 2px solid #007bff;
-}
 a {
   text-decoration: none;
-  color: inherit;
+  color: rgb(226, 232, 240);
   position: relative;
-}
-a::after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  left: 0;
-  bottom: -2px;
-  background-color: currentColor;
-  transition: width 0.3s ease;
-}
-
-a:hover::after {
-  width: 100%;
 }
 
 .experience {
@@ -143,10 +126,60 @@ a:hover::after {
 }
 
 @media (min-width: 1024px) {
+  a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -2px;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+  }
+  /* a:hover::after {
+  width: 100%;
+  
+  
+} */
   .home-container {
     margin: 0;
     padding: 0 4rem;
   }
+
+.mobile-nav a {
+  color: #999;
+  text-decoration: none;
+  font-weight: normal;
+  padding-left: 3.5rem;
+  position: relative;
+  display: flex;
+  margin: 0.5rem;
+}
+
+.mobile-nav a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0rem; /* start position */
+  transform: translateY(-50%);
+  width: 0; /* Initial width for animation */
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s ease, left 0.5s ease;
+  opacity: 0;
+}
+
+.mobile-nav a.active {
+  font-weight: bold;
+  color: #fff;
+  padding-left: 4rem; /* Shift actual text */
+}
+
+.mobile-nav a.active::before {
+  width: 2.5rem;  
+  opacity: 1;
+  left: 1rem; /* Move underline visually to stay left of text */
+}
 
   .home {
     display: flex;
@@ -182,12 +215,12 @@ a:hover::after {
     color: rgb(226, 232, 240);
   }
 
-  h1{
+  h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
   }
 
-  h2{
+  h2 {
     font-size: 1.4rem;
     margin-bottom: 0.5rem;
     font-weight: 400;
