@@ -1,37 +1,38 @@
-.home-left {
-  margin-bottom: 5rem;
-}
+@media (max-width: 767px) {
+  .home-left {
+    margin-bottom: 5rem;
+  }
 
-.hero-info {
-  line-height: 1.5;
-}
+  .hero-info {
+    line-height: 1.5;
+  }
 
-.lead {
-  padding: 1rem 0 0 0;
-}
-.home-container {
-  padding: 3rem 2rem;
-}
-.home-right {
-  position: relative;
-}
+  .lead {
+    padding: 1rem 0 0 0;
+  }
+  .home-container {
+    padding: 3rem 2rem;
+  }
+  .home-right {
+    position: relative;
+  }
 
-.sticky-section-header {
-  position: sticky;
-  top: 0; /* Adjust for fixed nav height */
-  background: rgb(1, 1, 22) 100%;
-}
-.section-name {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #fff;
-  margin-bottom: 0.5rem;
-}
-.hero-section {
-  margin: 2rem 0;
-}
+  .sticky-section-header {
+    position: sticky;
+    top: 0; /* Adjust for fixed nav height */
+    background: rgb(1, 1, 22) 100%;
+  }
+  .section-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 0.5rem;
+  }
+  .hero-section {
+    margin: 2rem 0;
+  }
 
-/* .mobile-nav {
+  /* .mobile-nav {
   position: fixed;
   top: 0;
   left: 0;
@@ -53,30 +54,39 @@
 }
   */
 
-a {
-  text-decoration: none;
-  color: rgb(226, 232, 240);
-  position: relative;
-}
+  .mobile-nav {
+    display: none;
+  }
 
-.experience {
-  display: flex;
-  flex-direction: column;
-  margin: 0 0 3rem 0;
-}
+  .contact-icons {
+    margin: 2rem 0;
+  }
 
-.experience .experience-date {
-  font-size: 0.9rem;
-  color: rgb(226, 232, 240);
-  align-content: start;
-  margin: 1rem 0 0 0;
-}
-.patientfirst-project {
-  margin: 1rem 0;
+  a {
+    text-decoration: none;
+    color: rgb(226, 232, 240);
+    position: relative;
+  }
+
+  .experience {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 3rem 0;
+  }
+
+  .experience .experience-date {
+    font-size: 0.9rem;
+    color: rgb(226, 232, 240);
+    align-content: start;
+    margin: 1rem 0 0 0;
+  }
+  .patientfirst-project {
+    margin: 1rem 0;
+  }
 }
 
 /* Tablet view */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .home {
     flex-direction: column;
     align-items: center;
@@ -88,14 +98,16 @@ a {
     max-width: 100%;
     margin: 1rem;
   }
-  .mobile-nav a {
-    display: block;
-    text-align: center;
+
+  .contact-icons {
+    margin: 2rem 0;
   }
   .sticky-section-header {
     position: relative;
   }
-
+  .mobile-nav {
+    display: none;
+  }
   .hero-info h1 {
     font-size: 3.5rem;
   }
@@ -125,7 +137,7 @@ a {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   a::after {
     content: "";
     position: absolute;
@@ -146,40 +158,40 @@ a {
     padding: 0 4rem;
   }
 
-.mobile-nav a {
-  color: #999;
-  text-decoration: none;
-  font-weight: normal;
-  padding-left: 3.5rem;
-  position: relative;
-  display: flex;
-  margin: 0.5rem;
-}
+  .mobile-nav a {
+    color: #999;
+    text-decoration: none;
+    font-weight: normal;
+    padding-left: 3.5rem;
+    position: relative;
+    display: flex;
+    margin: 0.5rem;
+  }
 
-.mobile-nav a::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0rem; /* start position */
-  transform: translateY(-50%);
-  width: 0; /* Initial width for animation */
-  height: 2px;
-  background-color: currentColor;
-  transition: width 0.3s ease, left 0.5s ease;
-  opacity: 0;
-}
+  .mobile-nav a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0rem; /* start position */
+    transform: translateY(-50%);
+    width: 0; /* Initial width for animation */
+    height: 2px;
+    background-color: currentColor;
+    transition: width 0.3s ease, left 0.5s ease;
+    opacity: 0;
+  }
 
-.mobile-nav a.active {
-  font-weight: bold;
-  color: #fff;
-  padding-left: 4rem; /* Shift actual text */
-}
+  .mobile-nav a.active {
+    font-weight: bold;
+    color: #fff;
+    padding-left: 4rem; /* Shift actual text */
+  }
 
-.mobile-nav a.active::before {
-  width: 2.5rem;  
-  opacity: 1;
-  left: 1rem; /* Move underline visually to stay left of text */
-}
+  .mobile-nav a.active::before {
+    width: 2.5rem;
+    opacity: 1;
+    left: 1rem; /* Move underline visually to stay left of text */
+  }
 
   .home {
     display: flex;
@@ -210,9 +222,24 @@ a {
   .section-name {
     color: rgb(226, 232, 240);
   }
+  .experience {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 3rem 0;
+    gap: 3rem;
+  }
+
+  .experience-content {
+    flex: 1;
+    color: rgb(226, 232, 240);
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
 
   .experience-date {
+    flex: 1;
     color: rgb(226, 232, 240);
+    width: 5rem;
   }
 
   h1 {

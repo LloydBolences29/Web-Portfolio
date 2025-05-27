@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/Home.css";
 import { Col, Container, Row } from "react-bootstrap";
 import ScrollSpy from "../components/ScrollSpy";
+import { BsGithub } from "react-icons/bs";
 
 const Home = () => {
   const sectionIds = ["about", "experiences", "projects"];
@@ -36,6 +37,13 @@ const Home = () => {
                     </a>
                   ))}
                 </nav>
+              </div>
+
+
+              <div className="contact-icons">
+                <a href="https://github.com/LloydBolences29"><BsGithub size={32} color="white"/></a>
+
+                
               </div>
             </div>
           </Col>
@@ -78,7 +86,7 @@ const Home = () => {
                     <p className="experience-date">2024 - Present</p>
                   </Col>
                   <Col xs={12} md={8}>
-                    <div>
+                    <div className="experience-content">
                       <h3>
                         Digital Solution Intern (Internship) | Southern Asia
                         Pacific Division
