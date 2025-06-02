@@ -3,6 +3,7 @@ import "../styles/Home.css";
 import { Col, Container, Row } from "react-bootstrap";
 import ScrollSpy from "../components/ScrollSpy";
 import { BsGithub } from "react-icons/bs";
+import { FaFilePdf } from "react-icons/fa";
 
 const Home = () => {
   const sectionIds = ["about", "experiences", "projects", "certifications"];
@@ -184,9 +185,10 @@ const Home = () => {
                     A full-stack web application created in a MERN Stack that
                     allows patients to view their profile, get a preliminary
                     diagnosis using a symptom checker powered by an AI from
-                    Infermedica engine API. This desktop web application is mainly
-                    designed for AUP clinic staff and medical practitioner to
-                    modernize their workflow of clinic's procedure.
+                    Infermedica engine API. This desktop web application is
+                    mainly designed for AUP clinic staff and medical
+                    practitioner to modernize their workflow of clinic's
+                    procedure.
                   </p>
                 </div>
               </div>
@@ -210,6 +212,7 @@ const Home = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
+                        <FaFilePdf className="text-red-600" />
                         Information Technology Specialist - Network Security
                       </a>
                     </h3>
@@ -239,6 +242,7 @@ const Home = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
+                        <FaFilePdf className="text-red-600" />
                         Information Technology Specialist - Python
                       </a>
                     </h3>
@@ -269,6 +273,7 @@ const Home = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
+                        <FaFilePdf className="text-red-600" />
                         Microsoft Office Specialist - Word Associate Microsoft
                         365 Apps
                       </a>
