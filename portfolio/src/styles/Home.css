@@ -253,6 +253,10 @@
     margin: 0 0 3rem 0;
     height: 100vh;
   }
+  .cert{
+    margin-bottom: 2rem;
+  }
+  
 
   section{
     margin: 3rem 0;

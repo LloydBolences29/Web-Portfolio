@@ -199,7 +199,7 @@ const Home = () => {
               <div className="sticky-section-header">
                 <h2 className="fw-semibold section-name">Certifications</h2>
               </div>
-              <Row>
+              <Row className="cert">
                 <Col
                   xs={12}
                   md={4}
@@ -229,7 +229,7 @@ const Home = () => {
                   </div>
                 </Col>
               </Row>
-              <Row>
+              <Row className="cert">
                 <Col
                   xs={12}
                   md={4}
@@ -260,7 +260,7 @@ const Home = () => {
                   </div>
                 </Col>
               </Row>
-              <Row>
+              <Row className="cert">
                 <Col
                   xs={12}
                   md={4}
