@@ -206,7 +206,7 @@ const Home = () => {
                   <div className="certification">
                     <h3>
                       <a
-                        href="../../public/ITSNetworkSec.pdf"
+                        href="/ITSNetworkSec.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -235,7 +235,7 @@ const Home = () => {
                   <div className="certification">
                     <h3>
                       <a
-                        href="../../public/ITSPython.pdf"
+                        href="/ITSPython.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -265,7 +265,7 @@ const Home = () => {
                   <div className="certification">
                     <h3>
                       <a
-                        href="../../public/Microsoft.pdf"
+                        href="/Microsoft.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
