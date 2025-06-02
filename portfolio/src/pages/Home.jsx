@@ -39,11 +39,10 @@ const Home = () => {
                 </nav>
               </div>
 
-
               <div className="contact-icons">
-                <a href="https://github.com/LloydBolences29"><BsGithub size={32} color="white"/></a>
-
-                
+                <a href="https://github.com/LloydBolences29">
+                  <BsGithub size={32} color="white" />
+                </a>
               </div>
             </div>
           </Col>
@@ -182,30 +181,110 @@ const Home = () => {
                     </a>
                   </h2>
                   <p>
-                    A full-stack web application created in a MERN Stack that allows patients to view
-                    their profile, get a preliminary diagnosis using a symptom
-                    checker powered by an AI from Infermedica engine API. This
-                    web application is mainly designed for AUP clinic staff and
-                    medical practitioner to modernize their workflow of clinic's
-                    procedure.
+                    A full-stack web application created in a MERN Stack that
+                    allows patients to view their profile, get a preliminary
+                    diagnosis using a symptom checker powered by an AI from
+                    Infermedica engine API. This desktop web application is mainly
+                    designed for AUP clinic staff and medical practitioner to
+                    modernize their workflow of clinic's procedure.
                   </p>
                 </div>
               </div>
               <br />
-             
-              
             </section>
 
             <section id="certifications" className="mb-4 hero-section">
               <div className="sticky-section-header">
                 <h2 className="fw-semibold section-name">Certifications</h2>
               </div>
-              <div className="certification">
-                <h3>Full-Stack Web Development Bootcamp</h3>
-                <p>
-                  Completed a comprehensive bootcamp covering HTML, CSS, JavaScript, React, Node.js, Express, and MongoDB.
-                </p>
-              </div>
+              <Row>
+                <Col
+                  xs={12}
+                  md={4}
+                  className="mb-md-0 text-center text-md-start"
+                >
+                  <div className="certification">
+                    <h3>
+                      <a
+                        href="../../public/ITSNetworkSec.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Information Technology Specialist - Network Security
+                      </a>
+                    </h3>
+                    <p>
+                      Completed a certification of ITS - Network security that
+                      was issued by Certiport and held at Adventist university
+                      of the philippines last May 13, 2024. Earning an ITS
+                      Network Security badge or certificate demonstrate
+                      foundational security knowledge and skills, including an
+                      understanding of core security principles operating system
+                      security, network and device security, and secure
+                      computing practices.
+                    </p>
+                  </div>
+                </Col>
+              </Row>
+              <Row>
+                <Col
+                  xs={12}
+                  md={4}
+                  className="mb-md-0 text-center text-md-start"
+                >
+                  <div className="certification">
+                    <h3>
+                      <a
+                        href="../../public/ITSPython.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Information Technology Specialist - Python
+                      </a>
+                    </h3>
+                    <p>
+                      Earned the IT Specialist certification in Python issued by
+                      Certiport and held at Adventist University of the
+                      Philippines last December 4, 2023, demonstrating
+                      foundational knowledge of Python programming, including
+                      data types, control structures, functions, error handling,
+                      and basic object-oriented concepts. This certification
+                      validates the ability to write, debug, and maintain Python
+                      code and confirms readiness for entry-level programming
+                      roles or further study in software development.
+                    </p>
+                  </div>
+                </Col>
+              </Row>
+              <Row>
+                <Col
+                  xs={12}
+                  md={4}
+                  className="mb-md-0 text-center text-md-start"
+                >
+                  <div className="certification">
+                    <h3>
+                      <a
+                        href="../../public/Microsoft.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Microsoft Office Specialist - Word Associate Microsoft
+                        365 Apps
+                      </a>
+                    </h3>
+                    <p>
+                      Earned last May 14, 2025 at Adventist University of the
+                      Philippiens that certifies proficiency in creating,
+                      editing, formatting, and managing professional documents
+                      using Microsoft Word. Covers advanced features such as
+                      tables, references, collaboration tools, and layout
+                      design, proving capability in producing high-quality
+                      documentation in business or academic settings.
+                    </p>
+                  </div>
+                </Col>
+              </Row>
             </section>
           </Col>
         </Row>
