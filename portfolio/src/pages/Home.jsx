@@ -5,7 +5,7 @@ import ScrollSpy from "../components/ScrollSpy";
 import { BsGithub } from "react-icons/bs";
 
 const Home = () => {
-  const sectionIds = ["about", "experiences", "projects"];
+  const sectionIds = ["about", "experiences", "projects", "certifications"];
   const activeSection = ScrollSpy(sectionIds);
   return (
     <div className="home-container">
