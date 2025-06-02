@@ -178,7 +178,7 @@ const Home = () => {
                       className="patientfirst-title"
                       href="https://aup-patient-first-frontend.vercel.app/"
                     >
-                      PatientFirst
+                      PatientFirst <span className="ml-1">↗</span>
                     </a>
                   </h2>
                   <p>
