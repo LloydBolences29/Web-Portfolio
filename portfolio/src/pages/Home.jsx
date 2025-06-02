@@ -182,7 +182,7 @@ const Home = () => {
                     </a>
                   </h2>
                   <p>
-                    A full-stack web application that allows patients to view
+                    A full-stack web application created in a MERN Stack that allows patients to view
                     their profile, get a preliminary diagnosis using a symptom
                     checker powered by an AI from Infermedica engine API. This
                     web application is mainly designed for AUP clinic staff and
@@ -192,34 +192,19 @@ const Home = () => {
                 </div>
               </div>
               <br />
-              <div className="patientfirst-project">
-                {/* thumbnail */}
-                <div className="patientfirst-thumbnail">
-                  <img
-                    className="patientfirst-img"
-                    src="/patientfirst.jpg"
-                    alt="PatientFirst Thumbnail"
-                  />
-                </div>
+             
+              
+            </section>
 
-                <div className="patientfirst-info">
-                  <h2 className="fw-semibold">
-                    <a
-                      className="patientfirst-title"
-                      href="https://aup-patient-first-frontend.vercel.app/"
-                    >
-                      PatientFirst
-                    </a>
-                  </h2>
-                  <p>
-                    A full-stack web application that allows patients to view
-                    their profile, get a preliminary diagnosis using a symptom
-                    checker powered by an AI from Infermedica engine API. This
-                    web application is mainly designed for AUP clinic staff and
-                    medical practitioner to modernize their workflow of clinic's
-                    procedure.
-                  </p>
-                </div>
+            <section id="certifications" className="mb-4 hero-section">
+              <div className="sticky-section-header">
+                <h2 className="fw-semibold section-name">Certifications</h2>
+              </div>
+              <div className="certification">
+                <h3>Full-Stack Web Development Bootcamp</h3>
+                <p>
+                  Completed a comprehensive bootcamp covering HTML, CSS, JavaScript, React, Node.js, Express, and MongoDB.
+                </p>
               </div>
             </section>
           </Col>
